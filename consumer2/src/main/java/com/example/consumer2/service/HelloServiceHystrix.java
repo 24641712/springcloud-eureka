@@ -1,5 +1,6 @@
 package com.example.consumer2.service;
 
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -9,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
  * Company: Tope
  * Created Date : 2019/12/24
  */
-@RestController
+@Component
 public class HelloServiceHystrix implements HelloFeignService{
     @Override
     public String home(String name) {
-        return "出错请重试";
+        return "调用feign出错请重试";
     }
 }

@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
  * Company: Tope
  * Created Date : 2019/12/22
  */
-@RestController
+@RestController("/feign")
 public class HelloController {
 
     @Autowired
     private HelloFeignService helloFeignService;
 
-    @RequestMapping(value = "/hi1")
+    @RequestMapping(value = "/hi")
     public String hi1(@RequestParam("name")String name){
         return helloFeignService.home(name);
     }

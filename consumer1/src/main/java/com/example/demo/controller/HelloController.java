@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Company: Tope
  * Created Date : 2019/12/22
  */
-@RestController
+@RestController("/ribbon")
 public class HelloController {
 
     @Autowired
