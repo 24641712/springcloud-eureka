@@ -19,7 +19,7 @@ public class HelloController {
     @Autowired
     private HelloFeignService helloFeignService;
 
-    @RequestMapping(value = "/hi")
+    @RequestMapping(value = "/feign/hi")
     public String hi1(@RequestParam("name")String name){
         return helloFeignService.home(name);
     }

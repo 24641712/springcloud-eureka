@@ -1,7 +1,6 @@
 package com.example.consumer2.service;
 
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @version 1.0
