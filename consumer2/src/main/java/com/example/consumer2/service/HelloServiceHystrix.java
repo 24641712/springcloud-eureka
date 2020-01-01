@@ -15,4 +15,10 @@ public class HelloServiceHystrix implements HelloFeignService{
     public String home(String name) {
         return "调用feign出错请重试";
     }
+
+    @Override
+    public String h1(String string)
+    {
+        return "调用失败";
+    }
 }

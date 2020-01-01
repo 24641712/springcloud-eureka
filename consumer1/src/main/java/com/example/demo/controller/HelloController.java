@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
  * Company: Tope
  * Created Date : 2019/12/22
  */
-@RestController("/ribbon")
+@RestController()
 public class HelloController {
 
     @Autowired
     private HelloService helloService;
 
-    @RequestMapping(value = "/ribbon/hi")
+    @RequestMapping(value = "/hi")
     public String hi(@RequestParam("name") String name){
       return helloService.hiService(name);
     }

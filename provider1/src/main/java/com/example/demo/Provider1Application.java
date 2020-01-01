@@ -22,7 +22,7 @@ public class Provider1Application {
 
     @RequestMapping("/hi")
     public String home(@RequestParam String name) {
-        return "hi " + name + ",i am from port:" + port;
+        return "hi " + name + ",I am from port:" + port;
     }
 
 }

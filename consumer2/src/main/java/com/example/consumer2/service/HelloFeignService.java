@@ -19,5 +19,9 @@ public interface HelloFeignService {
 
     @RequestMapping(value = "/hi",method = RequestMethod.GET)
     String home(@RequestParam("name") String name);
+
+    @RequestMapping(value = "/hello/h1",method = RequestMethod.GET)
+    String h1(@RequestParam("string") String string);
+
  
 }
